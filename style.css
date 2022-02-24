@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'IDroid' ;
+    src: url(fontes/IDroid.otf);
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: 'Bebas Neue', cursive;
+    --font2: 'IDroid', sans-serif ;
+}
+body{
+    font-family: var(--fonte0);
+    color: var(--cor0);
+    background-color: var(--cor1);
+    line-height: 1.2em;
+    margin: auto;
+}
+body p{
+    color: black;
+    text-indent: 1.2em;
+}
+header{
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3) );
+    padding: 5px;
+    max-width: 100%;
+}
+header h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding-top: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.493);
+}
+header p{
+    color: rgba(255, 255, 255, 0.767);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.493);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+nav{
+    max-width: 100%;
+    text-align: left;
+    display: flex;
+    margin-left: 10px;
+}
+nav p{
+    padding-right: 15px;
+    margin: 0;
+}
+nav p a{
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+nav p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+main{
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px 1px #518b6ba8;
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 5px;
+}
+.hist > h1{
+    text-shadow: 1px 1px 1px #5d776991;
+}
+.fv > h2{
+    text-shadow: 1px 1px 1px #5d776991;
+}
+.fv > p a{
+    color: var(--cor3);
+}
+.new > h2{
+    text-shadow: 1px 1px 1px #5d776991;
+}
+.new > article > p a{
+    color: var(--cor3);
+}
+div.video{
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+.mais > h3{
+    text-shadow: 1px 1px 1px #5d776991;
+    padding: 5px;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    text-align: center;
+}
+/* PAREI AQUI*/
+.maismais{
+    border-radius: 5px;
+    background-color: var(--cor3);
+    padding: 5px;
+} 
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+ul li{
+    color: white;
+}
+footer{
+    text-align: center;
+    background-color: var(--cor1);
+}
+footer p{
+    color: rgba(255, 255, 255, 0.664);
+}
