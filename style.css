@@ -1,6 +1,15 @@
+@charset "utf-8"; 
 @font-face {
     font-family: 'IDroid' ;
     src: url(fontes/IDroid.otf);
+}
+main a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+main a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 :root{
     --cor0: #c5ebd6;
@@ -74,10 +83,12 @@ main{
     padding: 5px;
 }
 .hist > h1{
-    text-shadow: 1px 1px 1px #5d776991;
+    color: var(--cor4);
+    text-shadow: 1px 1px 2px #14462a96;
+    font-family: var(--font2);
 }
 .fv > h2{
-    text-shadow: 1px 1px 1px #5d776991;
+    text-shadow: inset 1px 1px 3px var(--cor2);
 }
 .fv > p a{
     color: var(--cor3);
@@ -117,6 +128,13 @@ div.video > iframe{
     background-color: var(--cor3);
     padding: 5px;
 } 
+.maismais p a{
+    color: white;
+    text-decoration: none;
+}
+.maismais p a:hover{
+    text-decoration: underline;
+}
 ul{
     list-style-type: '\2714\0020\0020';
     columns: 2;
@@ -131,4 +149,12 @@ footer{
 }
 footer p{
     color: rgba(255, 255, 255, 0.664);
+}
+footer p a{
+    color: rgba(255, 255, 255, 0.664);
+    text-decoration: none;
+}
+footer p a:hover{
+    color: white;
+    text-decoration: underline;
 }
