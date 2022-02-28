@@ -1,7 +1,7 @@
 @charset "utf-8"; 
 @font-face {
     font-family: 'IDroid' ;
-    src: url(fontes/IDroid.otf);
+    src: url('fontes/IDroid.otf') format('opentype');
 }
 main a{
     color: var(--cor3);
@@ -62,20 +62,27 @@ nav{
     margin-left: 10px;
 }
 nav p{
-    padding-right: 15px;
     margin: 0;
+    padding-bottom: 2px;
 }
 nav p a{
+    padding: 10px;
+    font-weight: bolder;
     font-size: 10px;
     color: white;
     text-decoration: none;
 }
 nav p a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 5px;
+    transition-duration: .5s;
     text-decoration: underline;
     cursor: pointer;
 }
 main{
-    border-radius: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 1px 1px 5px 1px #518b6ba8;
     background-color: white;
     width: 800px;
